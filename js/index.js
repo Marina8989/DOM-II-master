@@ -1,6 +1,8 @@
 // Your code goes here
 const funBus = document.querySelector('.logo-heading');
 const navLink = document.querySelectorAll('.nav-link');
+const welcome = document.querySelector('.intro h2');
+
 
 funBus.addEventListener('mouseover', (e) => {
     e.target.style.color = 'pink';
@@ -18,4 +20,8 @@ navLink.forEach(el => {
         e.target.style.color = 'black';
         e.target.style.fontSize = '1.7rem';
     })
+});
+
+welcome.addEventListener('mouseover', () => {
+    welcome.style.color = 'orange';
 });
